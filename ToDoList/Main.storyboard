@@ -16,19 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add item here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YpH-5E-BQT">
-                                <rect key="frame" x="20" y="75" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add item here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YpH-5E-BQT">
+                                <rect key="frame" x="20" y="84" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96599192011424251" blue="0.96580771202700144" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YpH-5E-BQT" secondAttribute="trailing" constant="20" id="4hq-Lx-XCG"/>
+                            <constraint firstItem="YpH-5E-BQT" firstAttribute="leading" secondItem="tDe-Jv-dee" secondAttribute="leading" constant="20" id="Iax-v7-S3z"/>
+                            <constraint firstItem="YpH-5E-BQT" firstAttribute="top" secondItem="Dyl-vp-8K6" secondAttribute="bottom" constant="64" id="wJf-V3-yTE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PH-2Z-dTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="-195"/>
+            <point key="canvasLocation" x="-211" y="-133"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.57722455348297008" green="0.49175649003088284" blue="1" alpha="1" colorSpace="calibratedRGB"/>
