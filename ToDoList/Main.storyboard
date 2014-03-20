@@ -27,13 +27,14 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YpH-5E-BQT" secondAttribute="trailing" constant="20" id="4hq-Lx-XCG"/>
                             <constraint firstItem="YpH-5E-BQT" firstAttribute="leading" secondItem="tDe-Jv-dee" secondAttribute="leading" constant="20" id="Iax-v7-S3z"/>
-                            <constraint firstItem="YpH-5E-BQT" firstAttribute="top" secondItem="Dyl-vp-8K6" secondAttribute="bottom" constant="64" id="wJf-V3-yTE"/>
+                            <constraint firstItem="YpH-5E-BQT" firstAttribute="top" secondItem="Dyl-vp-8K6" secondAttribute="bottom" constant="20" id="wJf-V3-yTE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="d2Z-DJ-FzM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PH-2Z-dTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-211" y="-133"/>
+            <point key="canvasLocation" x="1259" y="-140"/>
         </scene>
         <!--Table View Controller - My To-Do List-->
         <scene sceneID="O4g-5G-9NJ">
@@ -140,12 +141,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My To-Do List" id="LuP-Uk-0l6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lka-He-eye"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lka-He-eye">
+                            <connections>
+                                <segue destination="cnB-0I-WDt" kind="push" id="EZa-df-bFn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogZ-nE-mL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="-140"/>
+            <point key="canvasLocation" x="797" y="-140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i2f-aq-iMV">
