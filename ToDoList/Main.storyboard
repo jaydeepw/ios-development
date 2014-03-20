@@ -35,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="-211" y="-133"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller - My To-Do List-->
         <scene sceneID="O4g-5G-9NJ">
             <objects>
                 <tableViewController id="LCB-1A-qvr" sceneMemberID="viewController">
@@ -139,7 +139,9 @@
                             <outlet property="delegate" destination="LCB-1A-qvr" id="IFP-MG-CVB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LuP-Uk-0l6"/>
+                    <navigationItem key="navigationItem" title="My To-Do List" id="LuP-Uk-0l6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lka-He-eye"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogZ-nE-mL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
