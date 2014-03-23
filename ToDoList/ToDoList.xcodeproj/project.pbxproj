@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69059EB818DEBCB600E64C26 /* T4DAddToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 69059EB718DEBCB600E64C26 /* T4DAddToDoItem.m */; };
+		69059EBB18DEBE9300E64C26 /* T4DToDoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69059EBA18DEBE9200E64C26 /* T4DToDoList.m */; };
 		6972B60418D5DD8400CFFDB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6972B60318D5DD8400CFFDB8 /* Foundation.framework */; };
 		6972B60618D5DD8400CFFDB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6972B60518D5DD8400CFFDB8 /* CoreGraphics.framework */; };
 		6972B60818D5DD8400CFFDB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6972B60718D5DD8400CFFDB8 /* UIKit.framework */; };
@@ -33,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69059EB618DEBCB600E64C26 /* T4DAddToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T4DAddToDoItem.h; sourceTree = "<group>"; };
+		69059EB718DEBCB600E64C26 /* T4DAddToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T4DAddToDoItem.m; sourceTree = "<group>"; };
+		69059EB918DEBE9200E64C26 /* T4DToDoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T4DToDoList.h; sourceTree = "<group>"; };
+		69059EBA18DEBE9200E64C26 /* T4DToDoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T4DToDoList.m; sourceTree = "<group>"; };
 		6972B60018D5DD8400CFFDB8 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6972B60318D5DD8400CFFDB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6972B60518D5DD8400CFFDB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				6972B63218D5E71700CFFDB8 /* Main.storyboard */,
+				69059EB918DEBE9200E64C26 /* T4DToDoList.h */,
+				69059EBA18DEBE9200E64C26 /* T4DToDoList.m */,
+				69059EB618DEBCB600E64C26 /* T4DAddToDoItem.h */,
+				69059EB718DEBCB600E64C26 /* T4DAddToDoItem.m */,
 				6972B60918D5DD8400CFFDB8 /* ToDoList */,
 				6972B62218D5DD8400CFFDB8 /* ToDoListTests */,
 				6972B60218D5DD8400CFFDB8 /* Frameworks */,
@@ -245,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6972B61018D5DD8400CFFDB8 /* main.m in Sources */,
+				69059EB818DEBCB600E64C26 /* T4DAddToDoItem.m in Sources */,
+				69059EBB18DEBE9300E64C26 /* T4DToDoList.m in Sources */,
 				6972B61418D5DD8400CFFDB8 /* T4DAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +458,7 @@
 				6972B62E18D5DD8400CFFDB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6972B62F18D5DD8400CFFDB8 /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +467,7 @@
 				6972B63118D5DD8400CFFDB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
