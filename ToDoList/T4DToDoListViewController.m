@@ -6,13 +6,26 @@
 //  Copyright (c) 2014 Jaydeep. All rights reserved.
 //
 
-#import "T4DToDoList.h"
+#import "T4DToDoListViewController.h"
+#import "T4DToDoItem.h"
 
 @interface T4DToDoList ()
-
+    @property NSMutableArray *toDoItems;
 @end
 
 @implementation T4DToDoList
+
+- (void)loadInitialData {
+    T4DToDoItem *item1 = [[T4DToDoItem alloc] init];
+    item1.itemName = @"Buy milk";
+    [self.toDoItems addObject:item1];
+    T4DToDoItem *item2 = [[T4DToDoItem alloc] init];
+    item2.itemName = @"Buy eggs";
+    [self.toDoItems addObject:item2];
+    T4DToDoItem *item3 = [[T4DToDoItem alloc] init];
+    item3.itemName = @"Read a book";
+    [self.toDoItems addObject:item3];
+}
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
@@ -37,6 +50,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
 }
 
 - (void)didReceiveMemoryWarning
