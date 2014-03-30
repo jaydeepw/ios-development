@@ -52,6 +52,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.toDoItems = [[NSMutableArray alloc] init];
+    NSLog(@" list %d", [self.toDoItems count]);
     [self loadInitialData];
 }
 
@@ -71,7 +72,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.toDoItems count];
 }
