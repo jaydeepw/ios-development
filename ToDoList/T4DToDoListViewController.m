@@ -9,8 +9,12 @@
 #import "T4DToDoListViewController.h"
 #import "T4DToDoItem.h"
 
+
+
 @interface T4DToDoList ()
     @property NSMutableArray *toDoItems;
+
+
 @end
 
 @implementation T4DToDoList
@@ -45,7 +49,7 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
+    // Uncomment
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -130,6 +134,17 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    T4DToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    NSLog(@"index: %d", indexPath.row );
+    tappedItem.completed = !tappedItem.completed;
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 @end
